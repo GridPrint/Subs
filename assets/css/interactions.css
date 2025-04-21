@@ -1,0 +1,96 @@
+/* === Базовая стилизация кнопок === */
+.mis-like-toggle,
+.mis-subscribe-toggle,
+.mis-comment-like-btn,
+.mis-comment-subscribe-btn,
+.mis-edit-comment-btn,
+.mis-save-comment-btn,
+.mis-mark-read-btn,
+.mis-delete-btn {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    margin: 5px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.mis-like-toggle:hover,
+.mis-subscribe-toggle:hover,
+.mis-save-comment-btn:hover {
+    background-color: #005e8c;
+}
+
+/* === Колокольчик уведомлений === */
+.mis-notification-bell {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mis-notification-bell .bell-icon {
+    font-size: 20px;
+}
+
+.mis-notification-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+
+.mis-notification-dropdown {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    padding: 10px;
+    display: none;
+}
+
+.mis-notification-dropdown .mis-notification-item {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* === Страница уведомлений === */
+.mis-user-notifications {
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.mis-user-notifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mis-user-notifications li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.mis-user-notifications li.read {
+    background: #f9f9f9;
+    color: #888;
+}
+
+.mis-actions,
+.mis-filters {
+    margin-bottom: 15px;
+}
+
+.mis-actions button,
+.mis-filters select {
+    margin-right: 10px;
+}
